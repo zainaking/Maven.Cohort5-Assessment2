@@ -18,10 +18,11 @@ public class Address {
     }
 
     public String getAddressLine1() {
-        return null;
+        return getAddressLine1();
     }
 
     public void setAddressLine1(String addressLine1) {
+
     }
 
     public String getAddressLine2() {

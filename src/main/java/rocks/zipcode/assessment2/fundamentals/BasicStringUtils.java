@@ -1,5 +1,7 @@
 package rocks.zipcode.assessment2.fundamentals;
 
+import java.util.Arrays;
+
 public class BasicStringUtils {
     /**
      * @param string1 - Base string to be added to
@@ -7,16 +9,35 @@ public class BasicStringUtils {
      * @return concatenation of `string1` and `string2`
      */
     public static String concatentate(String string1, String string2) {
-        return null;
+
+
+        return string1+string2;
     }
+
+
+
+
 
     /**
      * @param string1 - String to be reversed
      * @return an identical string with characters in reverse order
      */
     public static String reverse(String string1) {
-        return null;
+        int i, len = string1.length();
+        StringBuilder dest = new StringBuilder(len);
+
+        for (i = (len - 1); i >= 0; i--){
+            dest.append(string1.charAt(i));
+        }
+
+        return dest.toString();
+
     }
+
+
+
+
+
 
     /**
      * @param string1 - first string to be reversed
@@ -24,8 +45,14 @@ public class BasicStringUtils {
      * @return concatenation of the reverse of `string1` and reverse of `string2`
      */
     public static String reverseThenConcatenate(String string1, String string2) {
-        return null;
+        String rv = reverse(string1);
+        String vr = reverse(string2);
+        String cc = concatentate(rv, vr);
+        return cc;
     }
+
+
+
 
     /**
      * @param string - the string to be manipulated
@@ -33,8 +60,19 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-        return null;
+
+       return null;
+
+
     }
+
+
+
+
+
+
+
+
 
     /**
      * @param string - the string to be manipulated
@@ -42,6 +80,14 @@ public class BasicStringUtils {
      * @return reverse of `string` with `charactersToRemove` removed
      */
     public static String removeCharactersThenReverse(String string, String charactersToRemove) {
-        return null;
+
+       return null;
+
     }
+
+
+
+
+
+
 }

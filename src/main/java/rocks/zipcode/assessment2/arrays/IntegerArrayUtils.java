@@ -1,27 +1,44 @@
 package rocks.zipcode.assessment2.arrays;
 
+import java.util.Arrays;
+
 /**
  * @author leon on 28/11/2018.
  */
 public class IntegerArrayUtils {
     /**
-     * @param integerArray - array to have value added to it
+     * @param integerArray   - array to have value added to it
      * @param valueToBeAdded - value to be added to the end of the array
      * @return - identical array with one additional element of `valueToBeAdded` at the end of the array
      */
     public static Integer[] add(Integer[] integerArray, Integer valueToBeAdded) {
-        return null;
+
+        int len = integerArray.length + 1;
+
+
+        Integer[] arr = new Integer[len];
+
+
+        arr[len - 1] = valueToBeAdded;
+
+        return arr;
+
+
     }
 
     /**
-     * @param integerArray - array to be manipulated
-     * @param indexToInsertAt - index of the element to be inserted at
+     * @param integerArray      - array to be manipulated
+     * @param indexToInsertAt   - index of the element to be inserted at
      * @param valueToBeInserted - value of the element to be inserted
      * @return `integerArray` with `valueToBeInserted` at index number `indexToInsertAt`
      */
     public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
-        return null;
+
+     return null;
+
+
     }
+
 
     /**
      * @param integerArray - array to be evaluated
@@ -32,6 +49,7 @@ public class IntegerArrayUtils {
         return null;
     }
 
+
     /**
      * @param integerArray - array to be evaluated
      * @return identical array with even-values incremented by 1 and odd-values decremented by 1
@@ -40,19 +58,24 @@ public class IntegerArrayUtils {
         return null;
     }
 
+
     /**
      * @param integerArray - array to be evaluated
      * @return identical array with even-values incremented by 1
      */
     public static Integer[] incrementEven(Integer[] integerArray) {
+
         return null;
     }
+
 
     /**
      * @param input - array to be evaluated
      * @return identical array with odd-values decremented by 1
      */
     public static Integer[] decrementOdd(Integer[] input) {
-        return null;
-    }
+
+        return null;  }
+
+
 }
